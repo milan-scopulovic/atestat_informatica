@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+  <title>Exercitii</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  #myDIV1 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(98, 188, 218, 0.863);
+  margin-top: 20px;
+  display: none;
+  }
+
+  #myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(62, 204, 185, 0.863);
+  margin-top: 20px;
+  display: none;
+  }
+
+  #myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(33, 189, 103, 0.863);
+  margin-top: 20px;
+  display: none;
+  }
+
+  
+
+    body{
+      background-image: url(images/background_index.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 1366px){
+      .holdingcontainer2{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Acasa</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">Despre</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          TAMAS MELANIA - PROFESOR COORDONATOR<p>
+            SCOPULOVIC ALEXANDAR-MILAN - ELEV
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align:center">
+      <img src="images/logos/logo3.png"
+      width="480"
+      />
+    </p>
+
+    <div class="holdingcontainer2">
+      <div class="internalcontainer1">
+        <h2><p>Problema I</p></h2>
+        <p>Prin inaltimea unui arbore cu radacina intelegem
+          numarul de muchii ale celui mai lung lant format din
+          noduri distincte care are una dintre extremitati in 
+          radacina arborelui. Scrieti care este inaltimea si 
+          care sunt frunzele arborelui descris prin urmatorul 
+          vector "de tati":
+        </p>
+        <p>1 2 3 4 5 6 7 8</p>
+        <p>(6,6,5,0,6,4,4,7)</p>
+
+        <img src="images/Probleme/exercitii1.png"
+        height="240"
+        />
+
+        <p></p><button onclick="myFunction1()">Rezolvare</button>
+        <div id="myDIV1">
+          <p>INALTIME: Nivelul 4</p>
+          <p>FRUNZE: 1,2,3,8</p>
+        </div>
+
+      </div>
+
+      <div class="internalcontainer2">
+        <h2><p>Problema II</p></h2>
+        <p>Cate frunze are arborele cu radacina descris prin
+          urmatorul vector "de tati":
+        </p>
+        <p>1 2 3 4 5 6 7 8 9 10 11</p>
+        <p>(6,5,5,2,0,3,3,3,8,7,7)</p><p></p>
+        <p><b>a. 1  b. 2  c. 5  d. 4</b></p>
+        
+        <img src="images/Probleme/exercitii2.png"
+        height="240"
+        />
+
+        <p></p><button onclick="myFunction2()">Rezolvare</button>
+        <div id="myDIV2">
+          Nr. de frunze: 5 (1,4,9,10,11)
+        </div>
+
+      </div>
+
+      <div class="internalcontainer3">
+        <h2><p>Problema III</p></h2>
+        <p>Pentru arborele cu radacina avand urmatorul vector
+          "de tati" tata=(2,0,2,3,2,3,4,4,3), care este 
+          radacina arborelui si care sunt descendentii directi
+          (fiii) nodului 3?
+        </p>
+
+        <p></p><button onclick="myFunction3()">Rezolvare</button>
+        <div id="myDIV3">
+          <img src="images/Probleme/exercitii3.png"
+          height="180"/>         
+          <p>Radacina: 2</p>
+          <p>Descedenti directi ai nodului 3: 4,6,9</p></div>
+          </div>
+        
+
+      </div>
+      
+    </div>
+
+
+    <hr>
+    <hr>
+
+    <div class="holdingcontainer3">
+      <div class="internalcontainerL">
+          
+          <p style="text-align:center">
+              <h2>
+                  <b>
+                      Pentru a va evalua cunostintele legate de 
+                      arbori, puteti vizita urmatoarele site-uri:
+                  </b>
+              </h2>
+
+              <ul>
+                  
+                  <li> <a href="http://info.mcip.ro/?cap=arbori">info.mcip.ro</a> </li>
+                  <li> <a href="https://docplayer.ro/142339077-Probleme-rezolvate-informatica-probleme-rezolvate-grafuri-si-a.html">Probleme rezolvate grafuri si arbori</a> </li>
+
+              </ul>
+          
+          
+          </p>
+
+
+      </div>
+  </div>
+
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myDIV1");
+        if (x.style.display === "none") {
+          x.style.display = "block"
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+
+<script>
+  function myFunction2() {
+    var x = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+<script>
+  function myFunction3() {
+    var x = document.getElementById("myDIV3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html>

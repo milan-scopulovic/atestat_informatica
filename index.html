@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Arbori</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    body{
+
+      animation: fadeInAnimation ease 0.4s; 
+      animation-iteration-count: 1; 
+      animation-fill-mode: forwards; 
+
+      background-image: url(images/background_index.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+
+     
+    }
+
+    @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0.4; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
+
+
+        @media screen and (max-width: 1366px){
+      .holdingcontainer2{
+        flex-direction: column;
+      }
+    }
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Acasa</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">Despre</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          TAMAS MELANIA - PROFESOR COORDONATOR<p>
+          SCOPULOVIC ALEXANDAR-MILAN - ELEV
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align:center">
+      <img src="images/logos/Titlu_index_final.png"
+      width="240"
+      />
+    </p>
+
+    <hr><hr>
+
+    <div class="holdingcontainer"></div>
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/arbori1.png)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/logo1.png" alt="">
+                <form action="Introducere.html">
+                  <button class="btn">Acceseaza</button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/arbori2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/logo2.png" alt="">
+              <form action="Utilizari.html">
+                <button class="btn">Acceseaza</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/arbori3.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/logo3.png" alt="">
+              <form action="Exercitii.html">
+                <button class="btn">Acceseaza</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="holdingcontainer"></div>
+
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

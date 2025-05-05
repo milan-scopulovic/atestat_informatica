@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Arbori</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body{
+      background-image: url(images/background_index.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 1366px){
+      .holdingcontainer2{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Acasa</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+            <a href="about.html">Despre</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                TAMAS MELANIA - PROFESOR COORDONATOR<p>
+                SCOPULOVIC ALEXANDAR-MILAN - ELEV
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <p style="text-align:center">
+        <img src="images/logos/logo1.png"
+        width="320"
+        />
+      </p>
+  
+    <div class="holdingcontainer2">
+        <div class="internalcontainerL">
+            <h1><p style="text-align:center">Teoria grafurilor - Origine</p></h1>
+
+            <p style="text-align:center">
+                In teoria grafurilor, un arbore este un graf neorientat, 
+                conex si fara cicluri. Arborii reprezinta grafurile cele 
+                mai simple ca simple ca structura din clasa grafurilor 
+                conexe, fiind si cei mai frecvent utilizati in practica.
+            </p>
+            
+            <p style="text-align:center"> 
+                <img src="images/introducere1.gif"
+                width="480"
+                height="270"
+                />
+            </p>
+
+            <p style="text-align:center">
+                Termenul de "arbore" din teoria grafurilor a fost folosit
+                pentru prima data de Cayley in anul 1857. El a plecat de la 
+                o analogie cu notiunea de "arbore" din botanica.
+            </p>
+
+        </div>
+    
+        <div class="internalcontainerM">
+            <h1><p style="text-align:center">Tipuri de arbori</p></h1>
+                
+            <p style="text-align:center">
+                <ul>
+                    <li><div style='font-size: 20px; color:rgb(0, 0, 0)';><b>Arbore liber</b><div></li>
+                        <p>Un arbore liber poate fi descris
+                            ca un graf conex si aciclic.
+                        </p>
+                        <img src="images/arbore_liber.png"/>
+
+                    <li><div style='font-size: 20px; color:rgb(0, 0, 0)';><b>Arbore cu radacina</b><div></li>
+                        <p> Intr-un arbore, unuia dintre noduri
+                            ii poate fi atribuit rolul de 
+                            <b>radacina</b>, "agatandu-se" de 
+                            nivelul superior in timp ce restul
+                            nodurilor cad.
+                        </p>
+
+                        <img src="images/arbore_radacina.png"/>
+                </ul>
+            </p>
+        </div>
+
+        <div class="internalcontainerR">
+            <h1><p style="text-align:center">Terminologie - Reguli</p></h1>
+
+            <p style="text-align:center">
+            <ul>
+                
+                    <p>Luam exemplu arborele respectiv: </p>
+                    <p style="text-align:center"> 
+                        <img src="images/arbore_radacina_exemplu.png"/>
+                    </p>
+
+                    <ul>
+                        <li><i>Radacina</i> - <b>nodul 3</b></li>
+                        <li><i>Ascendentii <b>nodului 4</b></i> - <b>nodurile 5, 2, 3</b>; <b>Tatal nodului 4 - nodul 5</b></li>
+                        <li><i>Descendentii <b>nodului 2</b></i> - <b>nodurile 1, 7, 10, 5, 4, 6</b>: <b>Descendenti directi ai nodului 2 - nodurile 1, 5</b></li>
+                        <li><i>Frati - <b>nodurile 1 si 5</b></i></li>
+                        <li><i>Frunze - <b>nodurile 6 7 8 10 12</b></i></li>
+                        <li><i>Etajarea arborelui:
+                                <ul>
+                                    <li>Nivelul <b>0</b> - <b>radacina 3</b></li>
+                                    <li>Nivelul <b>1</b> - <b>nodurile 2, 9</b></li>
+                                    <li>Nivelul <b>2</b> - <b>nodurile 1 5 8 11</b></li>
+                                    <li>Nivelul <b>3</b> - <b>nodurile 7 10 4 12</b></li>
+                                    <li>Nivelul <b>4</b> - <b>nodul 6</b></li>
+                                </ul>
+                        </i></li>
+                        <li><i>Inaltimea arborelui - <b>4</b></i></li>
+                        <li><i>Nodurile <b>9 8 11 12</b> - subarbore</i></li>
+                    </ul>
+            </ul>
+            </p>
+
+        </div>
+
+    </div>
+    
+
+    <hr><hr>    
+
+    <div class="holdingcontainer2">
+        <div class="internalcontainerL">
+            
+            <p style="text-align:center">
+                <h2>
+                    <b>
+                        Pentru informatii suplimentare referitoare la teoria arborilor,
+                        implicit a grafurilor, puteti vizita urmatoarele site-uri:
+                    </b>
+                </h2>
+
+                <ul>
+                    
+                    <li> <a href="https://ro.wikipedia.org/wiki/Arbore_(teoria_grafurilor)">Wikipedia</a> </li>
+                    <li> <a href="https://invata.info/2017/04/02/arbori-c/">invata.info</a> </li>
+
+                </ul>
+            
+            
+            </p>
+
+
+        </div>
+    </div>
+
+    </body>
+    </html>
+
+    
+
+
+
+</body>
